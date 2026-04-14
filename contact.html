@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Начать работу — Оксана Терпенёва</title>
+    <meta
+      name="description"
+      content="Заявка на архитектурный разбор и диагностику цифровой инфраструктуры. Ограниченное число проектов в месяц."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Начать работу — Оксана Терпенёва" />
+    <meta
+      property="og:description"
+      content="Опишите задачу — предложу формат разбора или сопровождения. Ответ лично, без автошаблонов."
+    />
+    <meta property="og:locale" content="ru_RU" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Начать работу — Оксана Терпенёва",
+        "description": "Заявка на сопровождение по архитектуре цифровых систем."
+      }
+    </script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body data-root="" data-active="contact">
+    <div class="scroll-light" id="light"></div>
+    <div id="chrome-header"></div>
+
+    <main class="page-main">
+      <section class="fade">
+        <div class="parallax-line"></div>
+
+        <h1>
+          <span class="gold">Начать работу</span>
+        </h1>
+
+        <p class="section-lead" style="margin-bottom: 0">
+          Напишите, что болит: <strong>воронка</strong>, <strong>CRM</strong>,
+          <strong>реклама без цифр</strong> или ощущение, что «всё есть, но не
+          клеится». Я отвечу : какой формат разбора или
+          сопровождения имеет смысл именно сейчас — без навязывания лишнего
+          объёма. Дублировать сообщение можно в почту или Telegram — кнопки в
+          подвале каждой страницы.
+        </p>
+        <p>
+          Если у вас пока <strong>нет юрлица</strong>, но есть идея и готовность
+          выходить на людей — так и напишите в первой строке: соберём
+          минимальный контур до первых диалогов и сделок.
+        </p>
+      </section>
+
+      <section id="contact" class="fade">
+        <h2>Связь и формат</h2>
+
+        <p>
+          В работу беру <strong>не более двух глубоких проектов в месяц</strong>.
+          Архитектура требует глубины; «параллельно ещё десять чатов» — путь к
+          декорациям вместо результата. Отбор взаимный: если задача не моя, так и
+          скажу — с рекомендацией, куда копнуть дальше.
+        </p>
+
+        <form class="contact-form" id="contact-form" action="#" method="get">
+          <div>
+            <label for="cf-name">Имя</label>
+            <input type="text" id="cf-name" name="name" autocomplete="name" />
+          </div>
+          <div>
+            <label for="cf-email">Email для ответа</label>
+            <input
+              type="email"
+              id="cf-email"
+              name="email"
+              autocomplete="email"
+              required
+            />
+          </div>
+          <div>
+            <label for="cf-message">Сообщение</label>
+            <textarea
+              id="cf-message"
+              name="message"
+              required
+              placeholder="Например: отрасль, откуда лиды, что уже пробовали, слово «разбор» или «старт» в начале."
+            ></textarea>
+          </div>
+          <div class="checkbox-row">
+            <input type="checkbox" id="consent-pd" name="consent" required />
+            <label for="consent-pd">
+              Согласен на обработку персональных данных в соответствии с
+              <a href="consent/index.html" target="_blank" rel="noopener"
+                >текстом согласия</a>
+              и
+              <a href="privacy/index.html" target="_blank" rel="noopener"
+                >политикой конфиденциальности</a>.
+            </label>
+          </div>
+          <p class="btn-hint" style="margin-top: 4px">
+            Без галочки письмо не соберём: это про уважение к вашим данным и к
+            закону, а не про бюрократию ради неё.
+          </p>
+          <div class="btn-block">
+            <button type="submit" class="btn">Открыть Яндекс Почту</button>
+            <p class="btn-hint">
+              Откроется Яндекс Почта в новой вкладке с заполненными получателем,
+              темой и текстом — останется нажать «Отправить». Ответ придёт после
+              прочтения, это не авто-рассылка.
+            </p>
+          </div>
+        </form>
+
+        <p style="margin-top: 40px">
+          <a href="index.html" style="color: var(--gold); text-decoration: none"
+            >← На главную</a>
+        </p>
+      </section>
+    </main>
+
+    <div id="chrome-footer"></div>
+    <script src="js/config.js"></script>
+    <script src="js/chrome.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contact-form.js"></script>
+  </body>
+</html>

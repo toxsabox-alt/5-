@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор потерь — Оксана Терпенёва</title>
+    <meta
+      name="description"
+      content="Оценка порядка потерь по заявкам и времени: зачем цифра до разбора и как не обещать волшебство."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body data-root="../" data-active="calculator">
+    <div class="scroll-light" id="light"></div>
+    <div id="chrome-header"></div>
+
+    <main class="page-main">
+      <section class="fade">
+        <div class="parallax-line"></div>
+        <h1><span class="gold">Калькулятор потерь</span></h1>
+        <p class="section-lead" style="margin-bottom: 0">
+          Иногда <strong>одна строка цифр</strong> делает за вас работу по
+          убеждению команды и бюджета: не «кажется, что теряем», а «вот порядок
+          величины в месяц». Это не аудит и не финмодель — грубая оценка, чтобы
+          перестать притворяться, что хаос бесплатен.
+        </p>
+        <p>
+          Формула: потери по заявкам = заявок в месяц × доля потерь × средний чек;
+          потери по времени = часы на рутину × стоимость часа. Подставьте честные
+          приближения — даже они уже меняют разговор в кабинете.
+        </p>
+      </section>
+
+      <section class="fade">
+        <h2>Параметры</h2>
+        <div class="calc-form" id="loss-calculator">
+          <div class="calc-field">
+            <label for="calc-leads">Заявок в месяц</label>
+            <input type="number" id="calc-leads" min="0" value="120" />
+          </div>
+          <div class="calc-field">
+            <label for="calc-conv-loss"
+              >Потерянных заявок, % от входящего потока</label
+            >
+            <input type="number" id="calc-conv-loss" min="0" max="100" value="18" />
+          </div>
+          <div class="calc-field">
+            <label for="calc-deal">Средний чек (₽)</label>
+            <input type="number" id="calc-deal" min="0" value="45000" />
+          </div>
+          <div class="calc-field">
+            <label for="calc-hours"
+              >Часов в месяц на ручной «сбор» и перенос данных</label
+            >
+            <input type="number" id="calc-hours" min="0" value="40" />
+          </div>
+          <div class="calc-field">
+            <label for="calc-rate">Стоимость часа работы (₽)</label>
+            <input type="number" id="calc-rate" min="0" value="2500" />
+          </div>
+          <div class="btn-block">
+            <button type="button" class="btn" id="calc-run">Посчитать</button>
+            <p class="btn-hint">
+              После расчёта сделайте скрин или выпишите сумму — и напишите мне:
+              так мы начнём разговор с фактов, а не с «вроде неплохо идём».
+            </p>
+          </div>
+        </div>
+
+        <div class="calc-result" id="calc-output" aria-live="polite">
+          <strong>Нажмите «Посчитать»</strong>
+          <span class="hint"
+            >Результат не является финансовой или юридической рекомендацией.</span>
+        </div>
+
+        <div class="btn-row btn-row--fit" style="margin-top: 40px">
+          <a href="../blog/khaos-instrumenty.html" class="btn-secondary"
+            >Читать: от хаоса к инструментам</a>
+          <a href="../contact.html" class="btn">Разбор после цифры</a>
+        </div>
+        <p class="btn-hint">
+          В заявке приложите получившуюся сумму и одну фразу, что для вас
+          болезненнее — лиды или время команды. Ответ с форматом следующего шага.
+        </p>
+      </section>
+    </main>
+
+    <div id="chrome-footer"></div>
+    <script src="../js/config.js"></script>
+    <script src="../js/chrome.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/calculator.js"></script>
+  </body>
+</html>
